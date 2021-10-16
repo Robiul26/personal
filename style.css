@@ -548,7 +548,7 @@ form button{
     }
    
 
-    ul {
+  header  ul {
         display: none;
     }
     #checkBtn:checked~ul {
@@ -678,7 +678,7 @@ form button{
     margin-right: 10px; */
 }
 .footer-wraper{
-    margin-bottom: 100px;
+    padding-bottom: 100px;
 }
 footer h3, footer p{
     /* text-align: center; */
