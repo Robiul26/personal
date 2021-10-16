@@ -1,0 +1,695 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    background-color: #f9f9ff;
+}
+
+a, button {
+    text-decoration: none;
+    border: none;
+    outline: none;
+    text-transform: uppercase;
+}
+
+header {
+    width: 100%;
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    background-color: white;
+    z-index: 2;
+}
+
+header .logo {
+    margin-left: 10%;
+}
+
+.nav ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-right: 200px;
+    list-style: none;
+}
+
+.nav ul li {
+    margin-left: 10px;
+    text-transform: uppercase;
+    padding: 0 8px 0 8px;
+}
+
+.nav ul li a {
+    color: #4c4f46;
+    font-size: 12px;
+}
+
+.nav ul li a:hover {
+    color: #7f97ff;
+}
+
+.active {
+    color: #7f97ff!important;
+}
+
+/* Style for main-section */
+
+.main-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* background-color: gray; */
+    margin: 0px 10%;
+    margin-top: 60px;
+}
+
+.banner-desc, .banner-img {
+    width: 50%;
+}
+
+h3 {
+    text-transform: uppercase;
+    font-weight: normal;
+    font-size: 15px;
+}
+
+.banner-desc h1 {
+    font-size: 60px;
+    line-height: 100px;
+    text-transform: uppercase;
+}
+
+.banner-desc p {
+    padding-right: 30px;
+}
+
+p {
+    color: gray;
+    font-size: 15px;
+    text-align: justify;
+}
+
+button {
+    font-size: 15px;
+    color: white;
+    padding: 10px 20px;
+    background: linear-gradient(120deg, #6b60ec 20%, #7f97ff);
+    margin-top: 20px;
+}
+
+button:hover {
+    box-shadow: 5px 10px 30px rgb(130, 147, 255, .5);
+    transition: all .5s;
+    cursor: pointer;
+}
+
+
+img {
+    width: 100%;
+}
+
+/* Style for About section */
+
+.about-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* margin-left: 10%; */
+    height: 600px;
+    background-color: #ffffff;
+}
+
+.about-img {
+    width: 40%;
+    
+    margin-left: 10%;
+}
+
+.about-desc {
+    width: 40%;
+    margin-left: 10%;
+    padding-right: 100px;
+}
+
+.about-desc h2 {
+    line-height: 100px;
+    font-size: 36px;
+    text-transform: uppercase;
+}
+
+.service-section {
+    margin: 0 auto;
+    background-color: #ffffff;
+}
+
+.heading h2 {
+    text-align: center;
+    font-size: 36px;
+}
+
+.heading p {
+    text-align: center;
+    width: 50%;
+    margin: 0 auto;
+    margin-top: 10px;
+}
+
+.services {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 30px;
+    /* padding: 0 10%; */
+}
+
+.card {
+    width: 318px;
+}
+
+.card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 20px;
+    padding: 10px;
+}
+
+.card i {
+    font-size: 45px;
+    color: gray;
+}
+
+.card h3 {
+    font-size: 16px;
+    font-weight: 600;
+    color: black;
+}
+
+.card p {
+    width: 100%;
+    padding: 5px;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.card:hover h3 {
+    color: #8293ff;
+}
+
+.card i {
+    margin-bottom: 28px;
+}
+
+.card:hover i{
+    /* color: white; */
+    color: #8293ff;
+}
+
+/* For Award Count secton */
+
+.award-section {
+    background: linear-gradient(120deg, #6b60ec 10%, #7f97ff);
+    margin-top: 30px;
+}
+
+.award-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    height: 200px;
+}
+
+.award-count {
+    width: 200px;
+    /* padding: 70px 0px; */
+}
+
+.award-count, .award-count p {
+    text-align: center;
+    color: white;
+}
+
+.award-count h2 {
+    font-size: 45px;
+}
+
+.award-count p {
+    font-size: 12px;
+}
+
+/* For portfolio section */
+
+.portfolio-section {
+    /* width: 70%; */
+    margin: 60px auto;
+}
+
+.item-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-top: 30px;
+    padding: 0 10%;
+}
+
+.item {
+    max-width: 349px;
+    transition: all .3s ease-in;
+}
+
+.item img {
+    /* width: 100%; */
+    border-radius: 10px;
+    transition: all .3s ease-in;
+}
+
+figure {
+    
+    overflow: hidden;
+    background: linear-gradient(40deg, #8490ff 40%, #62bdfc 100%);
+    max-height: 287px;
+    border-radius: 10px;
+}
+
+figure img:hover {
+    opacity: .3;
+}
+
+.item h2 {
+    text-align: center;
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+.item p {
+    color: gray;
+    text-align: center;
+    font-size: 11px;
+}
+
+/* For Pricing section */
+
+.pricing-card-container {
+    width: 80%;
+    display: flex;
+    justify-content: space-around;
+    align-content: center;
+    flex-wrap: wrap;
+    margin: 30px auto;
+}
+
+.pricing-card {
+    width: 250px;
+    height: 450px;
+    position: relative;
+    border-radius: 5px;
+}
+
+.pricing-card:hover {
+    transition: 1s;
+   transform: scale(1.1);
+}
+
+.pricing-card:hover .border-box span{
+    background-color: #62bdfc;
+    color: white;
+}
+
+.pricing-card:hover {
+    background: linear-gradient(40deg, #8490ff 40%, #62bdfc 100%);
+    color: white;
+}
+
+.pricing-card:hover p{
+    color: white;
+    border-bottom: 1px solid white;
+}
+
+.pricing-card:hover h3{
+    color: white;
+}
+
+.pricing-card:hover h4{
+    color: white;
+    border-bottom: 1px solid white;
+}
+
+.pricing-card:hover .priceBtn{
+   display: none;
+}
+
+.pricing-card:hover .buyBtn{
+   display: block;
+}
+
+.border-box {
+    top: 8%;
+    left: 50%;
+    transform: translate(-50%, -8%);
+    position: absolute;
+    background-color: rgb(241, 234, 234);
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+.border-box span {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    width: 57px;
+    height: 57px;
+    line-height: 57px;
+    text-align: center;
+    background-color: white;
+    color: gray;
+    font-size: 25px;
+    border-radius: 50%;
+}
+
+
+.pricing-desc h3 {
+    position: absolute;
+    margin-top: 60%;
+    text-align: center;
+    width: 100%;
+    color: gray;
+    font-weight: 600;
+}
+
+.pricing-desc h4 {
+    position: absolute;
+    margin-top: 70%;
+    text-align: center;
+    width: 80%;
+    left: 10%;
+    font-weight: normal;
+    /* border-bottom: 1px solid gray; */
+    padding-bottom: 20px;
+    color: gray;
+}
+
+.pricing-desc p {
+    position: absolute;
+    margin-top: 90%;
+    text-align: center;
+    width: 100%;
+    /* border-bottom: 1px solid gray; */
+    width: 80%;
+    left: 10%;
+    font-size: 14px;
+    color: gray;
+    padding-bottom: 10px;
+}
+
+.buyBtn ,.priceBtn{
+    margin-top: 120%;
+    left: 10%;
+    position: absolute;
+    background: white;
+    color: black;
+    font-weight: 600;
+    width: 80%;
+}
+.priceBtn{
+    margin-top: 105%;
+    background: transparent;
+    font-size: 24px;
+}
+.buyBtn{
+    display: none;
+}
+
+/*For footer  */
+footer{
+    background-color: rgb(4,9,30);
+}
+footer h3{
+    color: white;
+    font-weight: bold;
+}
+.footer-wraper{
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    margin: 0 auto;
+    padding:7% 0;
+}
+.footer-wraper>div{
+    margin:auto 20px;
+}
+footer .about-me{
+    width: 40%;
+    /* margin: 30px; */
+}
+.about-me p{
+    margin: 10px auto;
+}
+.about-me a{
+    color: #6b60ec;
+    text-transform: capitalize;
+}
+footer .news-letter{
+    width: 40%;
+}
+.news-letter p{
+    margin: 10px auto;
+}
+.input-email{
+    width: 80%;
+    height: 40px;
+    border: none;
+    outline: none;
+    padding: 0 10px;
+    font-size: 16px;
+    border-radius: 0px;
+}
+footer .social-link{
+    width: 20%;
+}
+.social-link p{
+    margin: 20px auto;
+}
+form{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+form button{
+    width: 20%;
+    margin: 0;
+    border-radius: 0px;
+    padding: 12px 20px;
+}
+.socials ul{
+    list-style: none;
+
+}
+.socials ul li{
+    display: inline;
+    margin-right: 10px;
+}
+.socials i{
+    color: white;
+    font-size: 20px;
+}
+.socials a:hover i{
+    transition: .5s;
+    transform: scale(1.2);
+}
+
+@media (min-width:668px) {
+    .fa-bars{
+        display: none;
+    }
+}
+@media (max-width:667px) {
+/* For Header */
+.logo{
+    position: absolute;
+    left: 20px;
+}
+
+.nav ul {
+    position: absolute;
+    display: none;
+   top: 0;
+    background: black;
+    width: 250px;
+    height: 100vh;
+    opacity: .9;
+}
+.nav ul li {
+    margin-top: 20px;
+}
+.nav ul li a{
+    color: white;
+}
+  
+    .nav i{
+        position: absolute;
+        font-size: 40px;
+        right: 20px;
+        top: 14px;
+    }
+   
+
+    ul {
+        display: none;
+    }
+    #checkBtn:checked~ul {
+        display: block;
+    }
+/* Style for main-section */
+
+.main-section {
+    flex-direction: column;
+    /* background-color: gray; */
+    margin: 0px 0%;
+    margin-top: 100px;
+    padding-left: 20px;
+}
+.banner-desc h1 {
+    font-size: 30px;
+    line-height: 60px;
+}
+
+.banner-desc {
+    width: 100%;
+    margin-bottom: 45px;
+    margin-top: 20px;
+}
+.banner-img {
+    width: 70%;
+    margin-bottom: 45px;
+    /* margin-top: 40px; */
+}
+
+
+/* Style for About section */
+
+.about-section {
+    flex-direction: column;
+    height: auto;
+}
+/* .about-img , .about-dsc{
+    width: 100%;
+    padding-right: 0;
+    margin-left: 0%;
+} */
+.about-img, .about-dsc {
+    width: 100%;
+    padding-right: 0;
+    margin-left: 0%;
+    margin: 60px 30px 0 30px;
+}
+.about-desc {
+    width: 100%;
+    margin-left: auto;
+    /* padding-right: 100px; */
+    padding: 30px 20px;
+}
+.about-desc h2 {
+    line-height: 50px;
+    font-size: 20px;
+    text-transform: uppercase;
+}
+/* For Services */
+.service-section {
+   
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+/* For award section */
+.award-container{
+    flex-direction: column;
+    padding: 60px;
+    height: auto;
+}
+.award-count {
+    padding: 15px;
+}
+
+.heading {
+    width: 100%;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.heading h2 {
+    /* text-align: center; */
+    font-size: 37px;
+}
+
+.heading p {
+    text-align: center;
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 10px;
+}
+/* For portfolio section */
+.item{
+    margin-bottom: 20px;
+}
+
+/* footer */
+.footer-wraper{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    margin: 0 auto;
+    padding:7% 0;
+}
+
+footer .news-letter,footer .about-me,footer .social-link{
+    width: 100%;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+form{
+    /* display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column; */
+}
+form button{
+    /* width: 30%;
+    margin-top: 15px;
+    border-radius: 0px;
+    padding: 12px 20px; */
+}
+.socials ul li{
+    /* display: inline;
+    margin-right: 10px; */
+}
+.footer-wraper{
+    margin-bottom: 100px;
+}
+footer h3, footer p{
+    /* text-align: center; */
+    margin-top: 30px;
+}
+.socials ul{
+    /* text-align: center; */
+
+}
+.news-letter p{
+    margin: 20px auto;
+}
+
+}
