@@ -3,10 +3,12 @@
     padding: 0;
     box-sizing: border-box;
 }
-html{
+
+html {
     scroll-behavior: smooth;
 }
-body{
+
+body {
     background-color: #f9f9ff;
 }
 
@@ -111,7 +113,6 @@ button:hover {
     cursor: pointer;
 }
 
-
 img {
     width: 100%;
 }
@@ -129,7 +130,6 @@ img {
 
 .about-img {
     width: 40%;
-    
     margin-left: 10%;
 }
 
@@ -210,7 +210,7 @@ img {
     margin-bottom: 28px;
 }
 
-.card:hover i{
+.card:hover i {
     /* color: white; */
     color: #8293ff;
 }
@@ -276,7 +276,6 @@ img {
 }
 
 figure {
-    
     overflow: hidden;
     background: linear-gradient(40deg, #8490ff 40%, #62bdfc 100%);
     max-height: 287px;
@@ -319,10 +318,10 @@ figure img:hover {
 
 .pricing-card:hover {
     transition: 1s;
-   transform: scale(1.1);
+    transform: scale(1.1);
 }
 
-.pricing-card:hover .border-box span{
+.pricing-card:hover .border-box span {
     background-color: #62bdfc;
     color: white;
 }
@@ -332,26 +331,26 @@ figure img:hover {
     color: white;
 }
 
-.pricing-card:hover p{
+.pricing-card:hover p {
     color: white;
     border-bottom: 1px solid white;
 }
 
-.pricing-card:hover h3{
+.pricing-card:hover h3 {
     color: white;
 }
 
-.pricing-card:hover h4{
+.pricing-card:hover h4 {
     color: white;
     border-bottom: 1px solid white;
 }
 
-.pricing-card:hover .priceBtn{
-   display: none;
+.pricing-card:hover .priceBtn {
+    display: none;
 }
 
-.pricing-card:hover .buyBtn{
-   display: block;
+.pricing-card:hover .buyBtn {
+    display: block;
 }
 
 .border-box {
@@ -379,7 +378,6 @@ figure img:hover {
     font-size: 25px;
     border-radius: 50%;
 }
-
 
 .pricing-desc h3 {
     position: absolute;
@@ -415,7 +413,7 @@ figure img:hover {
     padding-bottom: 10px;
 }
 
-.buyBtn ,.priceBtn{
+.buyBtn, .priceBtn {
     margin-top: 120%;
     left: 10%;
     position: absolute;
@@ -424,52 +422,64 @@ figure img:hover {
     font-weight: 600;
     width: 80%;
 }
-.priceBtn{
+
+.priceBtn {
     margin-top: 105%;
     background: transparent;
     font-size: 24px;
 }
-.buyBtn{
+
+.buyBtn {
     display: none;
 }
 
 /*For footer  */
-footer{
-    background-color: rgb(4,9,30);
+
+footer {
+    background-color: rgb(4, 9, 30);
 }
-footer h3{
+
+footer h3 {
     color: white;
     font-weight: bold;
 }
-.footer-wraper{
+
+.footer-wraper {
     width: 80%;
     display: flex;
     justify-content: space-between;
     align-content: center;
     margin: 0 auto;
-    padding:7% 0;
+    padding: 7% 0;
 }
-.footer-wraper>div{
-    margin:auto 20px;
+
+.footer-wraper>div {
+    margin: auto 20px;
 }
-footer .about-me{
+
+footer .about-me {
     width: 40%;
     /* margin: 30px; */
 }
-.about-me p{
+
+.about-me p {
     margin: 10px auto;
 }
-.about-me a{
+
+.about-me a {
     color: #6b60ec;
     text-transform: capitalize;
 }
-footer .news-letter{
+
+footer .news-letter {
     width: 40%;
 }
-.news-letter p{
+
+.news-letter p {
     margin: 10px auto;
 }
-.input-email{
+
+.input-email {
     width: 80%;
     height: 40px;
     border: none;
@@ -478,218 +488,187 @@ footer .news-letter{
     font-size: 16px;
     border-radius: 0px;
 }
-footer .social-link{
+
+footer .social-link {
     width: 20%;
 }
-.social-link p{
+
+.social-link p {
     margin: 20px auto;
 }
-form{
+
+form {
     display: flex;
     justify-content: space-around;
     align-items: center;
 }
-form button{
+
+form button {
     width: 20%;
     margin: 0;
     border-radius: 0px;
     padding: 12px 20px;
 }
-.socials ul{
-    list-style: none;
 
+.socials ul {
+    list-style: none;
 }
-.socials ul li{
+
+.socials ul li {
     display: inline;
     margin-right: 10px;
 }
-.socials i{
+
+.socials i {
     color: white;
     font-size: 20px;
 }
-.socials a:hover i{
+
+.socials a:hover i {
     transition: .5s;
     transform: scale(1.2);
 }
 
 @media (min-width:668px) {
-    .fa-bars{
+    .fa-bars {
         display: none;
     }
 }
-@media (max-width:667px) {
-/* For Header */
-.logo{
-    position: absolute;
-    left: 20px;
-}
 
-.nav ul {
-    position: absolute;
-    display: none;
-   top: 0;
-    background: black;
-    width: 250px;
-    height: 100vh;
-    opacity: .9;
-}
-.nav ul li {
-    margin-top: 20px;
-}
-.nav ul li a{
-    color: white;
-}
-  
-    .nav i{
+@media (max-width:667px) {
+    /* For Header */
+    .logo {
+        position: absolute;
+        left: 20px;
+    }
+    .nav ul {
+        position: absolute;
+        display: none;
+        top: 0;
+        background: black;
+        width: 250px;
+        height: 100vh;
+        opacity: .9;
+    }
+    .nav ul li {
+        margin-top: 20px;
+    }
+    .nav ul li a {
+        color: white;
+        font-size: 20px;
+        line-height: 36px;
+        font-weight: 600;
+    }
+    .nav i {
         position: absolute;
         font-size: 40px;
         right: 20px;
         top: 14px;
     }
-   
-
-  header  ul {
+    header ul {
         display: none;
     }
     #checkBtn:checked~ul {
         display: block;
     }
-/* Style for main-section */
-
-.main-section {
-    flex-direction: column;
-    /* background-color: gray; */
-    margin: 0px 0%;
-    margin-top: 100px;
-    padding-left: 20px;
-}
-.banner-desc h1 {
-    font-size: 30px;
-    line-height: 60px;
-}
-
-.banner-desc {
-    width: 100%;
-    margin-bottom: 45px;
-    margin-top: 20px;
-}
-.banner-img {
-    width: 70%;
-    margin-bottom: 45px;
-    /* margin-top: 40px; */
-}
-
-
-/* Style for About section */
-
-.about-section {
-    flex-direction: column;
-    height: auto;
-}
-/* .about-img , .about-dsc{
-    width: 100%;
-    padding-right: 0;
-    margin-left: 0%;
-} */
-.about-img, .about-dsc {
-    width: 100%;
-    padding-right: 0;
-    margin-left: 0%;
-    margin: 60px 30px 0 30px;
-}
-.about-desc {
-    width: 100%;
-    margin-left: auto;
-    /* padding-right: 100px; */
-    padding: 30px 20px;
-}
-.about-desc h2 {
-    line-height: 50px;
-    font-size: 20px;
-    text-transform: uppercase;
-}
-/* For Services */
-.service-section {
-   
-    padding-top: 60px;
-    padding-bottom: 60px;
-}
-/* For award section */
-.award-container{
-    flex-direction: column;
-    padding: 60px;
-    height: auto;
-}
-.award-count {
-    padding: 15px;
-}
-
-.heading {
-    width: 100%;
-    padding-left: 20px;
-    padding-right: 20px;
-}
-.heading h2 {
-    /* text-align: center; */
-    font-size: 37px;
-}
-
-.heading p {
-    text-align: center;
-    width: 100%;
-    margin: 0 auto;
-    margin-top: 10px;
-}
-/* For portfolio section */
-.item{
-    margin-bottom: 20px;
-}
-
-/* footer */
-.footer-wraper{
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-direction: column;
-    margin: 0 auto;
-    padding:7% 0;
-}
-
-footer .news-letter,footer .about-me,footer .social-link{
-    width: 100%;
-    padding-left: 20px;
-    padding-right: 20px;
-}
-form{
-    /* display: flex;
-    justify-content: space-around;
-    align-items: center;
-    flex-direction: column; */
-}
-form button{
-    /* width: 30%;
-    margin-top: 15px;
-    border-radius: 0px;
-    padding: 12px 20px; */
-}
-.socials ul li{
-    /* display: inline;
-    margin-right: 10px; */
-}
-.footer-wraper{
-    padding-bottom: 100px;
-}
-footer h3, footer p{
-    /* text-align: center; */
-    margin-top: 30px;
-}
-.socials ul{
-    /* text-align: center; */
-
-}
-.news-letter p{
-    margin: 20px auto;
-}
-
+    /* Style for main-section */
+    .main-section {
+        flex-direction: column;
+        /* background-color: gray; */
+        margin: 0px 0%;
+        margin-top: 100px;
+        padding-left: 20px;
+    }
+    .banner-desc h1 {
+        font-size: 30px;
+        line-height: 60px;
+    }
+    .banner-desc {
+        width: 100%;
+        margin-bottom: 45px;
+        margin-top: 20px;
+    }
+    .banner-img {
+        width: 70%;
+        margin-bottom: 45px;
+        /* margin-top: 40px; */
+    }
+    /* Style for About section */
+    .about-section {
+        flex-direction: column;
+        height: auto;
+    }
+    .about-img, .about-dsc {
+        width: 100%;
+        padding-right: 0;
+        margin-left: 0%;
+        margin: 60px 30px 0 30px;
+    }
+    .about-desc {
+        width: 100%;
+        margin-left: auto;
+        padding: 30px 20px;
+    }
+    .about-desc h2 {
+        line-height: 50px;
+        font-size: 20px;
+        text-transform: uppercase;
+    }
+    /* For Services */
+    .service-section {
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+    /* For award section */
+    .award-container {
+        flex-direction: column;
+        padding: 60px;
+        height: auto;
+    }
+    .award-count {
+        padding: 15px;
+    }
+    .heading {
+        width: 100%;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .heading h2 {
+        /* text-align: center; */
+        font-size: 37px;
+    }
+    .heading p {
+        text-align: center;
+        width: 100%;
+        margin: 0 auto;
+        margin-top: 10px;
+    }
+    /* For portfolio section */
+    .item {
+        margin-bottom: 20px;
+    }
+    /* footer */
+    .footer-wraper {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: column;
+        margin: 0 auto;
+        padding: 7% 0;
+    }
+    footer .news-letter, footer .about-me, footer .social-link {
+        width: 100%;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .footer-wraper {
+        padding-bottom: 100px;
+    }
+    footer h3, footer p {
+        margin-top: 30px;
+    }
+    .news-letter p {
+        margin: 20px auto;
+    }
 }
